@@ -131,7 +131,7 @@ Allow quick toggles and presets without opening the full UI.
 
 ### Clone or download:
 
-`git clone https://github.com/yourusername/DigitalRingLight cd DigitalRingLight`
+`git clone https://github.com/HarshitRaja1999/EdgeLight.App.git`
 
 ### Run (Debug Mode)
 
