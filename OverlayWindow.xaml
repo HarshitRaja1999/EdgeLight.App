@@ -1,0 +1,40 @@
+﻿<Window x:Class="EdgeLight.App.OverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EdgeLight Overlay"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Topmost="True"
+        AllowsTransparency="True"
+        Background="Transparent">
+
+    <Grid>
+        <!-- This Border is our “light frame” -->
+        <!--<Border x:Name="LightFrame"
+                Margin="80"
+                CornerRadius="60"
+                BorderThickness="80">
+            <Border.BorderBrush>
+                --><!-- Simple gradient: brighter at inner side, softer outside --><!--
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    --><!-- We’ll update these colors/opacity from code later --><!--
+                    <GradientStop Color="#FFFFFFFF" Offset="0.35" />
+                    <GradientStop Color="#CCFFFFFF" Offset="0.65" />
+                    <GradientStop Color="#00FFFFFF" Offset="1.0" />
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+        </Border>-->
+        <Border x:Name="LightFrame"
+                Margin="0"
+                CornerRadius="60"
+                BorderThickness="80"
+                BorderBrush="White">
+            <Border.Effect>
+                <!-- Name this so we can change Radius from code -->
+                <BlurEffect x:Name="LightBlurEffect" Radius="20" />
+            </Border.Effect>
+        </Border>
+        
+    </Grid>
+</Window>
